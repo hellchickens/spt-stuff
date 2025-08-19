@@ -31,9 +31,9 @@
         "88faf0c37f7d0bcfb3b6dfc0": "BoltActionSniperRifle,SniperRifle", // Mosin Infantry 7.62x54R M91
         "88fafc6d3f714571deafdfc0": "BoltActionSniperRifle,SniperRifle", // Custom MP18
         "88fa99dead62024c56d1dfc0": "BoltActionSniperRifle,SniperRifle", // Remington Model 700 Monologue 7.62x51mm
-        "02002010AB10AB0000000000": "BoltActionSniperRifle", // Longbow (Bolt-action AK-103) 7.62x39mm
-        "684e32eaec9f5eb3cacc7ca7": "BoltActionSniperRifle", // Remington MSR .300 WM bolt-action sniper rifle
-        "68324e7849e4f772900f58e8": "BoltActionSniperRifle", // Remington Model 700 6.5x48 bolt-action sniper rifle
+        "02002010AB10AB0000000000": "BoltActionSniperRifle,SniperRifle", // Longbow (Bolt-action AK-103) 7.62x39mm
+        "684e32eaec9f5eb3cacc7ca7": "BoltActionSniperRifle,SniperRifle", // Remington MSR .300 WM bolt-action sniper rifle
+        "68324e7849e4f772900f58e8": "BoltActionSniperRifle,SniperRifle", // Remington Model 700 6.5x48 bolt-action sniper rifle
         "668c45bf9069178d4b1f225c": "BoltActionSniperRifle,SniperRifle", // Arisaka Type 99 7.7x58mm
         "88fc2c570dcb8ba3f501dfc0": "BoltActionSniperRifle,SniperRifle", // SV-98 Transcendence 7.62x54R
         "88fc3c4fbad055eed42fdfc0": "BoltActionSniperRifle,SniperRifle", // DVL-10 Mk2 12.7x108mm
@@ -213,12 +213,12 @@
         "88fa6be6bbbc7e299ebbdfc0": "AssaultCarbine,AssaultRifle", // M4A1 5.56x45mm Blue Crystal
         "88fab3241c8e1198c4f5dfc0": "AssaultCarbine,AssaultRifle", // DT MDR Perfect Plan 5.56x45mm
         "88fab849fbead4ab37a2dfc0": "AssaultCarbine,AssaultRifle", // DT MDR Perfect Plan 7.62x51mm
+        "020020F15DF15D0000000000": "AssaultCarbine,MarksmanRifle", // Expedite Firearms ISO Hemlock 7.62x51 assault rifle
         "664274afd9fe3879695d90e9": "AssaultRifle,AssaultCarbine,MachineGun", // HK G3 11E 7.62x51mm
         "88fbc22adbea16f7dfc4dfc0": "AssaultRifle,AssaultCarbine,MarksmanRifle", // RFB Ambush 7.62x51mm
         "8d59d8b10a4c2e85b871c317": "AssaultRifle,AssaultCarbine,MarksmanRifle", // SIG MCX SPEAR 7.62x51 assault rifle
         "020020AACBBCFB0000000000": "AssaultRifle,AssaultCarbine,MarksmanRifle", // Rattle Back MCW 5.56x45 marksman rifle
-        "020020F15DF15D0000000000": "AssaultRifle,AssaultCarbine,MarksmanRifle", // Expedite Firearms ISO Hemlock 7.62x51 assault rifle
-        "66e88596febdcf9daade16a8": "AssaultCarbine,MarksmanRifle, SniperRifle", // Zastava M76 7.92x57mm
+        "66e88596febdcf9daade16a8": "AssaultCarbine,MarksmanRifle,SniperRifle", // Zastava M76 7.92x57mm
         "88fcbee6a6efe18ac4e5dfc0": "AssaultRifle,AssaultCarbine,MarksmanRifle", // VSS Blizzard 9x39mm
         // machinegun
         "66e718dc498d978477e0ba75": "MachineGun", // M249 SAW 5.56x45mm
@@ -226,8 +226,8 @@
         "682d4820e48f3c573ec332b5": "MachineGun,AssaultRifle", // Bofors Ak5G 5.56x45 light machinegun
         // marsman rifle
         "020020AA14AA140000000000": "MarksmanRifle", // M14 7.62x51mm
-        "6657bc8faeddd6b0a9b40224": "MarksmanRifle, SniperRifle", // SVD 7.62x54R Sniper Rifle (wood)
-        "6657bd4d3a4d6e7c33fd2fdc": "MarksmanRifle, SniperRifle", // SVD 7.62x54R Sniper Rifle (camo)
+        "6657bc8faeddd6b0a9b40224": "MarksmanRifle,SniperRifle", // SVD 7.62x54R Sniper Rifle (wood)
+        "6657bd4d3a4d6e7c33fd2fdc": "MarksmanRifle,SniperRifle", // SVD 7.62x54R Sniper Rifle (camo)
         "88f98372dd4acd0bbf7fdfc0": "MarksmanRifle,SniperRifle", // G28 Space Rider 7.62x51mm
         "88fabde73e750a7a675edfc0": "MarksmanRifle,SniperRifle", // Mk14 EBR 7.62x51mm
         "88faedc4b9dc1af63dcbdfc0": "MarksmanRifle,SniperRifle", // Mosin Infantry 7.62x54R Automatic
@@ -267,11 +267,17 @@
         "gold",
         "multi"
         // "caliber"
-        // "SR-25",
         // "MCX"
     ],
     // any weapon with these short names will be skipped from the previous list
-    "CanBeUsedAsShortNameBlacklist" : [],
+    "CanBeUsedAsShortNameBlacklist" : [
+        "MCW",
+        "ISO",
+        "Hemlock",
+        "Remington",
+        "M700",
+        "SR-25"
+    ],
     // for quests that need specific types of weapons
     "CustomCategories": [
         {
@@ -324,8 +330,18 @@
             "whiteListedKeywords": [
                 "\\b(AK|Draco)\\w*"
             ],
-            "blackListedKeywords": [],
-            "allowedCalibres": [],
+            "blackListedKeywords": [
+                "\\b(AK-50)\\w*"
+            ],
+            "allowedCalibres": [
+                "Caliber545x39",
+                "Caliber556x45NATO",
+                "Caliber762x35",
+                "Caliber366TKM",
+                "Caliber9x19PARA",
+                "Caliber9x39",
+                "Caliber762x39"
+            ],
             "alsoCheckDescription": false
         },
         {
@@ -363,19 +379,106 @@
                 "Caliber545x39",
                 "Caliber556x45NATO",
                 "Caliber762x35",
-                "Caliber366TKM"
+                "Caliber366TKM",
+                "Caliber9x19PARA",
+                "Caliber9x39",
+                "Caliber762x39"
             ],
             "alsoCheckDescription": false
         },
         {
-            "name": "SR-25",
+            "name": "HK",
+            "ids": [],
+            "whiteListedKeywords": [
+                "\\b(HK|Heckler|Koch)\\w*"
+            ],
+            "blackListedKeywords": [
+                "ACR"
+            ],
+            "allowedCalibres": [
+                "Caliber545x39",
+                "Caliber556x45NATO",
+                "Caliber762x35",
+                "Caliber366TKM",
+                "Caliber9x19PARA",
+                "Caliber9x39",
+                "Caliber762x39",
+                "Caliber762x51"
+            ],
+            "alsoCheckDescription": true
+        },
+        {
+            "name": "BoltAction",
+            "ids": [],
+            "whiteListedKeywords": [
+                "\\b(bolt-action)\\w*"
+            ],
+            "blackListedKeywords": [],
+            "allowedCalibres": [
+                "Caliber366TKM",
+                "Caliber762x39",
+                "Caliber762x51",
+                "Caliber68x51",
+                "Caliber10.36x77mm",
+                "Caliber127x99",
+                "Caliber86x70",
+                "Caliber762x67B",
+                "Caliber338Norma",
+                "Caliber6.5x48",
+                "Caliber762x67B",
+                "Caliber762x54R"
+
+            ],
+            "alsoCheckDescription": true
+        },
+        {
+            "name": "SR-25_like",
             "ids": [],
             "whiteListedKeywords": [
                 "\\b(SR-)\\w*"
             ],
             "blackListedKeywords": [],
-            "allowedCalibres": [],
+            "allowedCalibres": [
+                "Caliber86x43",
+                "Caliber762x51",
+                "Caliber6.5x48",
+                "Caliber68x51"
+            ],
             "alsoCheckDescription": true
+        },
+        {
+            "name": "cal_9x39",
+            "ids": [],
+            "whiteListedKeywords": [],
+            "blackListedKeywords": [],
+            "allowedCalibres": [
+                "Caliber9x39"
+            ],
+            "alsoCheckDescription": false
+        },
+        {
+            "name": "BA_MR_762x54R",
+            "ids": [],
+            "whiteListedKeywords": [
+                "\\b(sniper|marksman|bolt|bolt-action)\\w*"
+            ],
+            "blackListedKeywords": [],
+            "allowedCalibres": [
+                "Caliber762x54R"
+            ],
+            "alsoCheckDescription": false
+        },
+        {
+            "name": "smg_9x19PARA",
+            "ids": [],
+            "whiteListedKeywords": [],
+            "blackListedKeywords": [
+                "\\b(pistol|revolver|handgun)\\w*"
+            ],
+            "allowedCalibres": [
+                "Caliber9x19PARA"
+            ],
+            "alsoCheckDescription": false
         },
         {
             "name": "explosive",
