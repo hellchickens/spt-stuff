@@ -24,6 +24,7 @@
         // bolt action
         "66cbc1d13919ac843e616d84": "BoltActionSniperRifle,SniperRifle", // Remington MSR 7.62x51mm
         "667b693466834848ed0c05a6": "BoltActionSniperRifle,SniperRifle", // CheyTac M200 Intervention .408 CheyTac
+        "68a387672d70af2b1e359602": "BoltActionSniperRifle,SniperRifle", // Accuracy International AXMC .300 Winchester Magnum bolt-action sniper rifle
         "61f7c9e189e6fb1a5e3ea78d": "BoltActionSniperRifle,SniperRifle,Shotgun,PumpActionShotgun", // MP-18 7.62x54R single-shot rifle (god gives his toughest types to his strongest weapons)
         "deee28079e76d537f532021c": "BoltActionSniperRifle,SniperRifle", // Surgeon Rifles 1581 XL action .338 LM bolt-action sniper rifle
         "1bf618e47cce6d69bec01e9f": "BoltActionSniperRifle,SniperRifle", // Surgeon Rifles 1581 XL action .338 Norma Magnum bolt-action sniper rifle
