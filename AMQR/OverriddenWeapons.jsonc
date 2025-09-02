@@ -20,6 +20,7 @@
     // Revolver (Pistol)
     ////////////////////////////////////
     // no more needed since this can be done using the CustomCategories, but its already working so no need to change it
+    "OverrideBehaviour": "REPLACE",
     "Override": {
         // bolt action
         "66cbc1d13919ac843e616d84": "BoltActionSniperRifle,SniperRifle", // Remington MSR 7.62x51mm
@@ -244,10 +245,6 @@
     // the weapons will be added when any other weapons are in the list
     // can also be a category
     "CanBeUsedAs": {
-        "5c46fbd72e2216398b5a8c9c": [ // SVDS 7.62x54R sniper rifle
-            "6657bc8faeddd6b0a9b40224",
-            "6657bd4d3a4d6e7c33fd2fdc"
-        ],
         "5447a9cd4bdc2dbd208b4567": [
             "M4A1"
         ]
@@ -267,9 +264,10 @@
         "AK",
         ".300 Blackout",
         ".300",
+        "Blackout",
         "FDE",
         "OD",
-        "furry",
+        "furry",    
         "black",
         "OD",
         "BK",
@@ -514,7 +512,7 @@
             "allowedCalibres": [
                 "Caliber545x39"
             ],
-            "alsoCheckDescription": true
+            "alsoCheckDescription": false
         },
         {
             "name": "cal_762x39",
