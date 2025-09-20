@@ -20,7 +20,7 @@
     // Revolver (Pistol)
     ////////////////////////////////////
     // no more needed since this can be done using the CustomCategories, but its already working so no need to change it
-    "OverrideBehaviour": "REPLACE",
+    "OverrideBehaviour": "MERGE",
     "Override": {
         // bolt action
         "66cbc1d13919ac843e616d84": "BoltActionSniperRifle,SniperRifle", // Remington MSR 7.62x51mm
@@ -85,6 +85,7 @@
         "88fcabfca15a5d44e79cdfc0": "Smg", // UMP .45 ACP
         "88fc9fa93b6a1c197747dfc0": "Smg", // Vector Extended
         "88fca322be2afcfabbcedfc0": "Smg", // Vector Dagger
+        "020020BEF1BEF10000000000": "Smg,AssaultCarbine", // Tectonic Tactical Superi 46 4.6x30 submachine gun
         //  pistol
         "88fbcc2007de6151addddfc0": "Pistol", // RSh-12 Skyfire 12.7x55mm
         "88fc920a70615f9f3c85dfc0": "Pistol", // TT Gold 7.62x25mm
@@ -156,6 +157,9 @@
         "88fbe3e9f9efb26e887bdfc0": "AssaultRifle", // MK16 Neko 5.56x45mm
         "88fbf9cdcac07fdcdec0dfc0": "AssaultRifle", // SCI-FI 12.7x55mm
         "67f425638b8cbfdc0cd1b5f2": "AssaultRifle,Smg", // IWI Tavor X95 9x19mm assault rifle
+        "020020AB75AB750000000000": "AssaultRifle,AssaultCarbine", // Usenko TR-75 Geist 5.45x39 assault rifle
+        "020020AB76AB760000000000": "AssaultRifle,AssaultCarbine", // Usenko TR-76 Geist 7.62x39 assault rifle
+        "020020AB77AB770000000000": "AssaultRifle,AssaultCarbine", // Usenko TR-77 Geist 5.56x45 assault rifle
         "66945f346fd04c33d4f9bc35": "AssaultRifle,AssaultCarbine", // Beretta ARX160 5.56x45mm
         "6696b5e6ed3ac659cc619eff": "AssaultRifle,AssaultCarbine", // Beretta ARX160 FDE 5.56x45mm
         "6696b5f5520265c38b644920": "AssaultRifle,AssaultCarbine", // Beretta ARX160 OD 5.56x45mm
@@ -165,11 +169,9 @@
         "66a545898022784400d6c836": "AssaultRifle,AssaultCarbine", // IWI Tavor X95 5.56x45 assault rifle (OD)
         "6668df22e6b592f28024be10": "AssaultRifle,AssaultCarbine", // WoS AR-15 5.56x45mm
         "6668ddd37b793f48deb730d4": "AssaultRifle,AssaultCarbine", // WoS AR-15 Red 5.56x45mm
-        "66e5b5e16c48ad4b4735cfbc": "AssaultRifle,MarksmanRifle", // Hoshizora SCAR 17 7.62x51mm
         "6671ebcdd32bd95eb398e920": "AssaultRifle,AssaultCarbine", // Bofors Ak5C 5.56x45 assault rifle
         "682d460e951a926af552d764": "AssaultRifle,AssaultCarbine", // Bofors Ak5C 5.56x45 assault rifle (custom)
         "682d3dd16900cb35564c8825": "AssaultRifle,AssaultCarbine", // Bofors Ak5D 5.56x45 assault rifle
-        "664a5b945636ce820472f225": "AssaultRifle,MarksmanRifle", // HK 417 7.62x51 assault rifle
         "66ba249b102a9dd6040a6e7e": "AssaultRifle,AssaultCarbine", // IWI Carmel 5.56x45mm Assault Rifle
         "66ba26a6925f9921573224c9": "AssaultRifle,AssaultCarbine", // IWI Carmel 5.56x45mm Assault Rifle (FDE)
         "66839591f4d0cba7b041b2af": "AssaultRifle,AssaultCarbine", // Patriot 1776 (M4A1) 5.56x45mm
@@ -191,30 +193,32 @@
         "020020F15FF15F0000000000": "AssaultRifle,AssaultCarbine", // Expedite Firearms ISO Hemlock 5.56x45 assault rifle
         "020020F15EF15E0000000000": "AssaultRifle,AssaultCarbine", // Expedite Firearms ISO Hemlock .300 Blackout assault rifle
         "6859872fb5698809d7a4f446": "AssaultRifle,AssaultCarbine", // Anderson AM-15 7.62x39 assault rifle
-        "020020195195F95556000000": "AssaultCarbine,AssaultRifle", // IWI Tavor X95 5.56x45 assault rifle
-        "020020195195F95545000000": "AssaultCarbine,AssaultRifle", // IWI Tavor X95-R 5.45x39 assault rifle
-        "52500592c7109667abb6cbeb": "AssaultCarbine,AssaultRifle", // Modified Century Arms Draco 7.62x39 Assault Rifle
-        "b6c589ec2535085340807057": "AssaultCarbine,AssaultRifle", // ZLR GRAU 5.56 assault rifle
-        "5dbcb66f4827cd761fb3797a": "AssaultCarbine,AssaultRifle", // ZLR GRAU 7.62 assault rifle
-        "682a543094114c092df7373e": "AssaultCarbine,AssaultRifle", // Molot Arms VPO-208 .366 TKM carbine
-        "57c44b372459772d2b39b8ce": "AssaultCarbine,AssaultRifle", // AS VAL 9x39 special assault rifle
-        "685986b9f3b3a12b2546f999": "AssaultCarbine,AssaultRifle", // ORSIS AR-15J .366 TKM assault carbine
-        "682f527ae74a24cfa1d3f5c5": "AssaultCarbine,AssaultRifle", // Riley Defense RAK74-P semi-automatic rifle
-        "4b81488c78c8a8ac7d37f9b9": "AssaultCarbine,AssaultRifle", // Mechanic's Colt M4A1 .300 blackout assault rifle
-        "939c742f7dad852286188029": "AssaultCarbine,AssaultRifle", // Kalashnikov AKS-74UB .300 Blackout Assault Rifle
-        "627c4fe34b0a558e8a3642a1": "AssaultCarbine,AssaultRifle", // Kalashnikov AKS-74UN .300 Blackout Assault Rifle
-        "68580e9cea46c81b4db2221e": "AssaultCarbine,AssaultRifle", // Kalashnikov AKS-74UN 5.56x45 assault rifle
-        "ed05294ed53c0400ae0e8a55": "AssaultCarbine,AssaultRifle", // Kalashnikov AKS-74U .300 Blackout Assault Rifle
-        "ffc95b9d143f52202a311820": "AssaultCarbine,AssaultRifle", // Kalashnikov AK-102 .300 Blackout assault rifle
-        "6828f3c5a1e409ab7d163228": "AssaultCarbine,AssaultRifle", // Kalashnikov AK-12/9 "Buivol" 9x39 assault rifle
-        "68291dcbc8bb6e883871070f": "AssaultCarbine,AssaultRifle", // Kalashnikov AK-15 7.62x39 assault rifle
-        "93bcdfda236122e67c098847": "AssaultCarbine,AssaultRifle", // Century Arms Draco 7.62x39mm carbine
-        "57f28a7ffb22e277b0234219": "AssaultCarbine,AssaultRifle", // Saiga SGL31 5.45x39mm
-        "e895575bcd1fa1de36d301b6": "AssaultCarbine,AssaultRifle", // Saiga MK Ver. 030 5.45x39mm
-        "88fa6bb68e30e3112f58dfc0": "AssaultCarbine,AssaultRifle", // M4A1 5.56x45mm High Alert
-        "88fa6be6bbbc7e299ebbdfc0": "AssaultCarbine,AssaultRifle", // M4A1 5.56x45mm Blue Crystal
-        "88fab3241c8e1198c4f5dfc0": "AssaultCarbine,AssaultRifle", // DT MDR Perfect Plan 5.56x45mm
-        "88fab849fbead4ab37a2dfc0": "AssaultCarbine,AssaultRifle", // DT MDR Perfect Plan 7.62x51mm
+        "020020195195F95556000000": "AssaultRifle,AssaultCarbine", // IWI Tavor X95 5.56x45 assault rifle
+        "020020195195F95545000000": "AssaultRifle,AssaultCarbine", // IWI Tavor X95-R 5.45x39 assault rifle
+        "52500592c7109667abb6cbeb": "AssaultRifle,AssaultCarbine", // Modified Century Arms Draco 7.62x39 Assault Rifle
+        "b6c589ec2535085340807057": "AssaultRifle,AssaultCarbine", // ZLR GRAU 5.56 assault rifle
+        "5dbcb66f4827cd761fb3797a": "AssaultRifle,AssaultCarbine", // ZLR GRAU 7.62 assault rifle
+        "682a543094114c092df7373e": "AssaultRifle,AssaultCarbine", // Molot Arms VPO-208 .366 TKM carbine
+        "57c44b372459772d2b39b8ce": "AssaultRifle,AssaultCarbine", // AS VAL 9x39 special assault rifle
+        "685986b9f3b3a12b2546f999": "AssaultRifle,AssaultCarbine", // ORSIS AR-15J .366 TKM assault carbine
+        "682f527ae74a24cfa1d3f5c5": "AssaultRifle,AssaultCarbine", // Riley Defense RAK74-P semi-automatic rifle
+        "4b81488c78c8a8ac7d37f9b9": "AssaultRifle,AssaultCarbine", // Mechanic's Colt M4A1 .300 blackout assault rifle
+        "939c742f7dad852286188029": "AssaultRifle,AssaultCarbine", // Kalashnikov AKS-74UB .300 Blackout Assault Rifle
+        "627c4fe34b0a558e8a3642a1": "AssaultRifle,AssaultCarbine", // Kalashnikov AKS-74UN .300 Blackout Assault Rifle
+        "68580e9cea46c81b4db2221e": "AssaultRifle,AssaultCarbine", // Kalashnikov AKS-74UN 5.56x45 assault rifle
+        "ed05294ed53c0400ae0e8a55": "AssaultRifle,AssaultCarbine", // Kalashnikov AKS-74U .300 Blackout Assault Rifle
+        "ffc95b9d143f52202a311820": "AssaultRifle,AssaultCarbine", // Kalashnikov AK-102 .300 Blackout assault rifle
+        "6828f3c5a1e409ab7d163228": "AssaultRifle,AssaultCarbine", // Kalashnikov AK-12/9 "Buivol" 9x39 assault rifle
+        "68291dcbc8bb6e883871070f": "AssaultRifle,AssaultCarbine", // Kalashnikov AK-15 7.62x39 assault rifle
+        "93bcdfda236122e67c098847": "AssaultRifle,AssaultCarbine", // Century Arms Draco 7.62x39mm carbine
+        "57f28a7ffb22e277b0234219": "AssaultRifle,AssaultCarbine", // Saiga SGL31 5.45x39mm
+        "e895575bcd1fa1de36d301b6": "AssaultRifle,AssaultCarbine", // Saiga MK Ver. 030 5.45x39mm
+        "88fa6bb68e30e3112f58dfc0": "AssaultRifle,AssaultCarbine", // M4A1 5.56x45mm High Alert
+        "88fa6be6bbbc7e299ebbdfc0": "AssaultRifle,AssaultCarbine", // M4A1 5.56x45mm Blue Crystal
+        "88fab3241c8e1198c4f5dfc0": "AssaultRifle,AssaultCarbine", // DT MDR Perfect Plan 5.56x45mm
+        "88fab849fbead4ab37a2dfc0": "AssaultRifle,AssaultCarbine", // DT MDR Perfect Plan 7.62x51mm
+        "66e5b5e16c48ad4b4735cfbc": "AssaultRifle,MarksmanRifle", // Hoshizora SCAR 17 7.62x51mm
+        "664a5b945636ce820472f225": "AssaultRifle,MarksmanRifle", // HK 417 7.62x51 assault rifle
         "020020F15DF15D0000000000": "AssaultCarbine,MarksmanRifle", // Expedite Firearms ISO Hemlock 7.62x51 marksman rifle
         "664274afd9fe3879695d90e9": "AssaultRifle,AssaultCarbine,MachineGun", // HK G3 11E 7.62x51mm
         "88fbc22adbea16f7dfc4dfc0": "AssaultRifle,AssaultCarbine,MarksmanRifle", // RFB Ambush 7.62x51mm
@@ -240,14 +244,12 @@
         "6787c587daf18caae2c47bda": "SniperRifle,MarksmanRifle", // Walther WA 2000 .300 Winchester Magnum Marksman Rifle
         "66c01f332770caf084f35480": "SniperRifle,MarksmanRifle", // Barrett M107A1 .50 BMG
         "66c13c53999e17f0702c2e70": "SniperRifle,MarksmanRifle" // Barrett M107A1 FDE .50 BMG
-
     },
     // the weapons will be added when any other weapons are in the list
     // can also be a category
     "CanBeUsedAs": {
-        "5447a9cd4bdc2dbd208b4567": [
-            "M4A1"
-        ]
+        "5447a9cd4bdc2dbd208b4567": ["M4A1"],
+        "66058cb9e8e4f17985230805": ["939c742f7dad852286188029"]
     },
     // if any two weapons' short names are the same or differs only by these words, they will be considered the same
     "CanBeUsedAsShortNameWhitelist": [],
@@ -294,6 +296,7 @@
             "allowedCalibres": [
                 "Caliber762x39"
             ], //  weapons with only these will be added,
+            "weaponTypes": ["AssaultRifle","AssaultCarbine"],
             "alsoCheckDescription": false //  if true, the description will also be checked
         },
         {
@@ -309,48 +312,15 @@
         {
             "name": "12ga", // Identifier
             "ids": [
-                "61f7c9e189e6fb1a5e3ea78d", // MP-18 7.62x54R single-shot rifle
-                "023023A12A12A12000000000", // JAK-12 (AA-12) 12ga
-                "669fca7f9ed4916116c76d5e", // Browning Auto-5 12ga
-                "6840ebf5b8687ba34f8dfbca", // Browning Auto-5 12ga
-                "6761b213607f9a6f79017d23", // Serbu Super Shorty
-                "88fafc4a3c1a9a3ba02ddfc0", // MR-133 Aftermath 12ga
-                "88fb58f7ca8d5a59daafdfc0", // MPA 203 12ga
-                "88fbfbd0fec3ef1fdd91dfc0", // Double Barrel Destruction 12ga
-                "88fbfee8d8bee33b03bddfc0", // Revolver Shotgun Pursuit 12ga
-                "88fc1efb96d31efe8bafdfc0", // Super Shorty 12ga
-                "88fc25c843c1dbb408f5dfc0" // Super Shorty S 12ga
+                "61f7c9e189e6fb1a5e3ea78d" // MP-18 7.62x54R single-shot rifle
             ], // if a weapon is in this list, it will be considered as this category no matter what
             "whiteListedKeywords": [], //  these will be searched in the weapon name and description
             "blackListedKeywords": [], //  weapons with name/description containing these will be removed
             "allowedCalibres": [
                 "Caliber12g"
             ], //  weapons with only these will be added,
+            "weaponTypes": ["Shotgun"],
             "alsoCheckDescription": false //  if true, the description will also be checked
-        },
-        {
-            "name": "20ga", 
-            "ids": [], 
-            "whiteListedKeywords": [],
-            "blackListedKeywords": [
-                "\\b(12ga)\\w*"
-            ],
-            "allowedCalibres": [
-                "Caliber20g"
-            ],
-            "alsoCheckDescription": true 
-        },
-        {
-            "name": "cal_23x75", 
-            "ids": [], 
-            "whiteListedKeywords": [],
-            "blackListedKeywords": [
-                "\\b(12ga)\\w*"
-            ],
-            "allowedCalibres": [
-                "Caliber23x75"
-            ],
-            "alsoCheckDescription": true 
         },
         {
             "name": "AK",
@@ -370,6 +340,7 @@
                 "Caliber9x39",
                 "Caliber762x39"
             ],
+            "weaponTypes": ["AssaultRifle","AssaultCarbine","Smg"],
             "alsoCheckDescription": false
         },
         {
@@ -380,18 +351,20 @@
             ],
             "blackListedKeywords": [],
             "allowedCalibres": [],
+            "weaponTypes": ["AssaultRifle","AssaultCarbine","Smg"],
             "alsoCheckDescription": false
         },
         {
             "name": "AR-15",
             "ids": [],
             "whiteListedKeywords": [
-                "\\b(AR-15|M4A|ATL-15|Wages)\\w*"
+                "\\b(AR-15|M4A|ATL-15|Wages|ADAR|TX-15)\\w*"
             ],
             "blackListedKeywords": [
                 "\\b(SR-|MCX|ACR|HK)\\w*"
             ],
             "allowedCalibres": [],
+            "weaponTypes": ["AssaultRifle","AssaultCarbine","Smg","MarksmanRifle"],
             "alsoCheckDescription": true
         },
         {
@@ -408,79 +381,54 @@
                 "Caliber762x35",
                 "Caliber762x39"
             ],
+            "weaponTypes": ["AssaultRifle","AssaultCarbine","MarksmanRifle"],
             "alsoCheckDescription": true
         },
         {
-            "name": "HK",
-            "ids": [],
+            "name": "MP-shotguns",
+            "ids": [
+                "61f7c9e189e6fb1a5e3ea78d" // MP-18 7.62x54R single-shot rifle
+            ],
             "whiteListedKeywords": [
-                "\\b(HK|Heckler|Koch)\\w*"
-            ],
-            "blackListedKeywords": [
-                "\\b(SR-|MCX|ACR)\\w*"
-            ],
-            "allowedCalibres": [
-                "Caliber545x39",
-                "Caliber556x45NATO",
-                "Caliber762x35",
-                "Caliber366TKM",
-                "Caliber9x19PARA",
-                "Caliber9x39",
-                "Caliber762x39",
-                "Caliber762x51"
-            ],
-            "alsoCheckDescription": true
-        },
-        {
-            "name": "BoltAction",
-            "ids": [],
-            "whiteListedKeywords": [
-                "\\b(bolt-action|bolt)\\w*"
+                "\\b(MP-)\\w*"
             ],
             "blackListedKeywords": [],
-            "allowedCalibres": [
-                "Caliber366TKM",
-                "Caliber762x39",
-                "Caliber762x51",
-                "Caliber68x51",
-                "Caliber10.36x77mm",
-                "Caliber127x99",
-                "Caliber86x70",
-                "Caliber762x67mmB",
-                "Caliber338Norma",
-                "Caliber6.5x48",
-                "Caliber762x67B",
-                "Caliber762x54R"
-
-            ],
-            "alsoCheckDescription": true
-        },
-        {
-            "name": "SR-25_like",
-            "ids": [],
-            "whiteListedKeywords": [
-                "\\b(SR-)\\w*"
-            ],
-            "blackListedKeywords": [],
-            "allowedCalibres": [
-                "Caliber86x43",
-                "Caliber762x51",
-                "Caliber6.5x48",
-                "Caliber68x51"
-            ],
-            "alsoCheckDescription": true
+            "allowedCalibres": [],
+            "weaponTypes": ["Shotgun"],
+            "alsoCheckDescription": false
         },
         {
             "name": "SVD",
             "ids": [],
             "whiteListedKeywords": [
-                "\\b(svd)\\w*"
+                "\\b(svd|svds)\\w*"
             ],
             "blackListedKeywords": [],
             "allowedCalibres": [
                 "Caliber762x54R"
             ],
+            "weaponTypes": ["MarksmanRifle","SniperRifle"],
             "alsoCheckDescription": true
+        },
+        {
+            "name": "explosive",
+            "ids": [],
+            "whiteListedKeywords": [
+                "\\b(grenade)\\w*"
+            ],
+            "blackListedKeywords": [],
+            "allowedCalibres": [],
+            "alsoCheckDescription": false
+        },
+        {
+            "name": "cal_9x19",
+            "ids": [],
+            "whiteListedKeywords": [],
+            "blackListedKeywords": [],
+            "allowedCalibres": [
+                "Caliber9x19PARA"
+            ],
+            "alsoCheckDescription": false
         },
         {
             "name": "cal_9x39",
@@ -506,8 +454,8 @@
             "name": "cal_545x39",
             "ids": [],
             "whiteListedKeywords": [],
-            "blackListedKeywords": [
-                "\\b(.300|Blackout|blk|utyos)\\w*"
+            "blackListedKeywords":[
+                "Utyos" // because BSG logic is cursed and NSV Utyos instead of having its own "Caliber127x108" is set up with "Caliber545x39"
             ],
             "allowedCalibres": [
                 "Caliber545x39"
@@ -518,46 +466,16 @@
             "name": "cal_762x39",
             "ids": [],
             "whiteListedKeywords": [],
-            "blackListedKeywords": [
-                "\\b(.300|Blackout|blk|utyos)\\w*"
-            ],
+            "blackListedKeywords": [],
             "allowedCalibres": [
                 "Caliber762x39"
             ],
-            "alsoCheckDescription": true
+            "alsoCheckDescription": false
         },
         {
-            "name": "cal_366TKM",
+            "name": "cal_762x54R",
             "ids": [],
             "whiteListedKeywords": [],
-            "blackListedKeywords": [
-                "\\b(.300|Blackout|blk|utyos)\\w*"
-            ],
-            "allowedCalibres": [
-                "Caliber366TKM"
-            ],
-            "alsoCheckDescription": true
-        },
-        {
-            "name": "cal_338",
-            "ids": [],
-            "whiteListedKeywords": [],
-            "blackListedKeywords": [
-                "\\b(.300|Blackout|blk|utyos)\\w*"
-            ],
-            "allowedCalibres": [
-                "Caliber86x70"
-            ],
-            "alsoCheckDescription": true
-        },
-        {
-            "name": "BA_MR_762x54R",
-            "ids": [
-                "61f7c9e189e6fb1a5e3ea78d"
-            ],
-            "whiteListedKeywords": [
-                "\\b(sniper|marksman|bolt|bolt-action)\\w*"
-            ],
             "blackListedKeywords": [],
             "allowedCalibres": [
                 "Caliber762x54R"
@@ -565,251 +483,24 @@
             "alsoCheckDescription": false
         },
         {
-            "name": "BA_762x51",
-            "ids": [],
-            "whiteListedKeywords": [
-                "\\b(bolt|bolt-action|BoltActionSniperRifle)\\w*"
-            ],
-            "blackListedKeywords": [
-                "\\b(SR-25)\\w*"
-            ],
-            "allowedCalibres": [
-                "Caliber762x51"
-            ],
-            "alsoCheckDescription": true
-        },
-        {
-            "name": "MR_762x51",
-            "ids": [],
-            "whiteListedKeywords": [
-                "\\b(dmr|marksman|sniper|MarksmanRifle|RFB|spear)\\w*"
-            ],
-            "blackListedKeywords": [
-                "\\b(Expedite|5.56x45|blackout|300)\\w*"
-            ],
-            "allowedCalibres": [
-                "Caliber762x51"
-            ],
-            "alsoCheckDescription": true
-        },
-        {
-            "name": "smg_9x19PARA",
+            "name": "cal_366TKM",
             "ids": [],
             "whiteListedKeywords": [],
-            "blackListedKeywords": [
-                "\\b(pistol|revolver|handgun)\\w*"
-            ],
+            "blackListedKeywords": [],
             "allowedCalibres": [
-                "Caliber9x19PARA"
+                "Caliber366TKM"
             ],
             "alsoCheckDescription": false
         },
         {
-            "name": "m700",
+            "name": "cal_338",
             "ids": [],
-            "whiteListedKeywords": [
-                "\\b(m700|model 700)\\w*"
-            ],
+            "whiteListedKeywords": [],
             "blackListedKeywords": [],
-            "allowedCalibres": [],
-            "alsoCheckDescription": true
-        },
-        {
-            "name": "VSS",
-            "ids": [],
-            "whiteListedKeywords": [
-                "\\b(VSS|Vintorez)\\w*"
-            ],
-            "blackListedKeywords": [
-                "\\b(VSK-94)\\w*"
-            ],
             "allowedCalibres": [
-                "Caliber9x39"
+                "Caliber86x70"
             ],
             "alsoCheckDescription": false
-        },
-        {
-            "name": "mcx_spear",
-            "ids": [],
-            "whiteListedKeywords": [
-                "\\b(spear)\\w*"
-            ],
-            "blackListedKeywords": [],
-            "allowedCalibres": [],
-            "alsoCheckDescription": true
-        },
-        {
-            "name": "mcx_any",
-            "ids": [],
-            "whiteListedKeywords": [
-                "\\b(mcx|virtus)\\w*"
-            ],
-            "blackListedKeywords": [],
-            "allowedCalibres": [],
-            "alsoCheckDescription": true
-        },
-        {
-            "name": "scar_any",
-            "ids": [],
-            "whiteListedKeywords": [
-                "\\b(scar)\\w*"
-            ],
-            "blackListedKeywords": [
-                "\\b(ACR)\\w*"
-            ],
-            "allowedCalibres": [],
-            "alsoCheckDescription": true
-        },
-        {
-            "name": "explosive",
-            "ids": [],
-            "whiteListedKeywords": [
-                "\\b(grenade)\\w*"
-            ],
-            "blackListedKeywords": [],
-            "allowedCalibres": [],
-            "alsoCheckDescription": false
-        },
-        {
-            "name": "57_pistol",
-            "ids": [],
-            "whiteListedKeywords": [
-                "\\b(five-seven|57|pistol)\\w*"
-            ],
-            "blackListedKeywords": [],
-            "allowedCalibres": [
-                "Caliber57x28"
-            ],
-            "alsoCheckDescription": true
-        },
-        {
-            "name": "russian_ar",
-            "ids": [
-                "5cadfbf7ae92152ac412eeef",
-                "5c07c60e0db834002330051f",
-                "6410733d5dd49d77bd07847e",
-                "643ea5b23db6f9f57107d9fd"
-            ],
-            "whiteListedKeywords": [
-                "AR-15J",
-                "AK",
-                "ASh-12",
-                "Val",
-                "AN-94",
-                "Molot",
-                "Kalashnikov",
-                "VPO-101",
-                "AKM",
-                "AK-1",
-                "AK-74",
-                "AKS-74U",
-                "SAG AK-545",
-                "AEK-9",
-                "AN-94",
-                "KBP",
-                "SAG",
-                "Russia",
-                "Russian",
-                "Soviet",
-                "AVT",
-                "SVT",
-                "AKS",
-                "AKS-74"
-            ],
-            "blackListedKeywords": [
-                "\\b(m1a|m4a|iwi|acr|mcx|cmmg|iso|hk|arx|ak5d|ak5c|zlr|echoes|pdw|RD-704|Velociraptor|Bofors|machinegun|machine|rpd|rpdn|rpk|T-5000M)\\w*"
-            ],
-            "allowedCalibres": [
-                "Caliber545x39",
-                "Caliber556x45NATO",
-                "Caliber762x35",
-                "Caliber366TKM",
-                "Caliber9x39",
-                "Caliber762x39",
-                "Caliber762x51"
-            ],
-            "alsoCheckDescription": true
-        },
-        {
-            "name": "russian_smg_pistol",
-            "ids": [
-                "620109578d82e67e7911abf2",
-                "57f4c844245977379d5c14d1"
-            ],
-            "whiteListedKeywords": [
-                "Russia",
-                "Russian",
-                "Soviet",
-                "PM",
-                "BP",
-                "Makarov",
-                "SR-",
-                "PP-",
-                "TT-",
-                "Stechkin",
-                "PPSh-41",
-                "PL-",
-                "RSh-12",
-                "STM-9",
-                "SP-81",
-                "MP-",
-                "Saiga-9",
-                "9x18PMM"
-
-            ],
-            "blackListedKeywords": [
-                "\\b(ash-12|Minebea)\\w*"
-            ],
-            "allowedCalibres": [
-                "Caliber9x19PARA",
-                "Caliber9x18PM",
-                "Caliber9x21",
-                "Caliber762x25TT",
-                "Caliber127x55"
-            ],
-            "alsoCheckDescription": true
-        },
-        {
-            "name": "russian_shotgun",
-            "ids": [],
-            "whiteListedKeywords": [
-                "Russia",
-                "Russian",
-                "Soviet",
-                "MP-",
-                "Saiga-12",
-                "TOZ"
-            ],
-            "blackListedKeywords": [
-                "\\b(remington|benelli|mossberg|Shorty|serbu)\\w*"
-            ],
-            "allowedCalibres": [
-                "Caliber12g",
-                "Caliber20g",
-                "Caliber23x75"
-            ],
-            "alsoCheckDescription": true
-        },
-        {
-            "name": "russian_mg",
-            "ids": [],
-            "whiteListedKeywords": [
-                "PKM",
-                "RPD",
-                "PKTM",
-                "RPK",
-                "NSV",
-                "PKP"
-            ],
-            "blackListedKeywords": [
-                // "\\b(mosin|ak-|bolt-action|saiga|an-94)\\w*"
-            ],
-            "allowedCalibres": [
-                "Caliber762x54R",
-                "Caliber545x39",
-                "Caliber762x39"
-            ],
-            "alsoCheckDescription": true
         }
     ]
 }
