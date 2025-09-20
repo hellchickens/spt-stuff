@@ -498,7 +498,8 @@
             "whiteListedKeywords": [],
             "blackListedKeywords": [],
             "allowedCalibres": [
-                "Caliber86x70"
+                "Caliber86x70",
+                "Caliber86x63"
             ],
             "alsoCheckDescription": false
         }
