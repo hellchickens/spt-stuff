@@ -1,0 +1,99 @@
+{
+    "OverrideBehaviour": "MERGE",
+    "BlackListedQuests": [
+        "666314b2a9290f9e0806cca3",  // Hell on Earth - Part 2
+        "666314bafd5ca9577902e03a",  // The Good Times - Part 2
+        "669fa3a40c828825de06d6a1",  // Test Drive - Part 5
+        "671ac68e30609eb2c7e9a7f7"  // Dangerous Props
+    ], // will skip completely,
+    "Overrides": [
+        // id : string,                                     // id
+        // skip: boolean,                                  // will skip this quest if true (only weapons in the CanBeUsedAs will be added to the quest)
+        // conditions: string[]                              // if true, the mod will not add any weapons to this quest automatically.
+        // onlyUseWhiteListedWeapons: boolean,            // if true, only weapons in whiteListedWeapons will be used
+        // whiteListedWeapons: string[],              // these weapons will be added to the quest no matter what, can also be a category
+        // blackListedWeapons: string[],             // these weapons will be removed from the quest no matter what, can also be a category
+        {
+            "id": "5c1234c286f77406fa13baeb", // Setup
+            "whiteListedWeapons": ["MP-shotguns"],
+            "onlyUseWhiteListedWeapons": true,
+            "skip": false
+        },
+        {
+            "id": "5a03153686f77442d90e2171", // Spa Tour - part 1
+            "whiteListedWeapons": ["12ga"],
+            "onlyUseWhiteListedWeapons": true,
+            "skip": false
+        },
+        {
+            "id": "59ca264786f77445a80ed044", // The Punisher - Part 4
+            "whiteListedWeapons": ["12ga"],
+            "onlyUseWhiteListedWeapons": true,
+            "skip": false
+        },
+        {
+            "id": "59ca2eb686f77445a80ed049", // The Punisher - Part 6
+            "whiteListedWeapons": ["SVD"],
+            "skip": false
+        },
+        {
+            "id": "5a27bb8386f7741c770d2d0a", // Wet Job - Part 1
+            "whiteListedWeapons": ["AR-15"],
+            "skip": false
+        },
+        {
+            "id": "5c0d4c12d09282029f539173", // Peacekeeping Mission
+            "whiteListedWeapons": ["M4A1"],
+            "onlyUseWhiteListedWeapons": true,
+            "skip": false
+        },
+        {
+            "id": "64e7b9bffd30422ed03dad38", // Gendarmerie - District Patrol
+            "whiteListedWeapons": ["AssaultRifle","AssaultCarbine"],
+            "onlyUseWhiteListedWeapons": true,
+            "skip": false
+        },
+        {
+            "id": "66a75b44243a6548ff5e5ff9", // Gun Connoisseur
+            "conditions": ["66a76d45acbbf739afad1fea"],
+            "whiteListedWeapons": ["cal_556x45NATO"],
+            "onlyUseWhiteListedWeapons": true,
+            "skip": false
+        },
+        {
+            "id": "66a75b44243a6548ff5e5ff9", // Gun Connoisseur
+            "conditions": ["66a76d693cda803a9788be30"],
+            "whiteListedWeapons": ["cal_545x39"],
+            "onlyUseWhiteListedWeapons": true,
+            "skip": false
+        },
+        {
+            "id": "66a75b44243a6548ff5e5ff9", // Gun Connoisseur
+            "conditions": ["66a76daa3a883f3481e56b96"],
+            "whiteListedWeapons": ["cal_762x39"],
+            "onlyUseWhiteListedWeapons": true,
+            "skip": false
+        },
+        {
+            "id": "66a75b44243a6548ff5e5ff9", // Gun Connoisseur
+            "conditions": ["66a76efbe0a0eb89847ac586"],
+            "whiteListedWeapons": ["cal_762x54R"],
+            "onlyUseWhiteListedWeapons": true,
+            "skip": false
+        },
+        {
+            "id": "66a75b44243a6548ff5e5ff9", // Gun Connoisseur
+            "conditions": ["66a76fb52a58ea63fbb62d67"],
+            "whiteListedWeapons": ["cal_9x19"],
+            "onlyUseWhiteListedWeapons": true,
+            "skip": false
+        },
+        {
+            "id": "66a75b44243a6548ff5e5ff9", // Gun Connoisseur
+            "conditions": ["66a76fc57a265a8879856491"],
+            "whiteListedWeapons": ["cal_9x39"],
+            "onlyUseWhiteListedWeapons": true,
+            "skip": false
+        }
+    ]
+}
