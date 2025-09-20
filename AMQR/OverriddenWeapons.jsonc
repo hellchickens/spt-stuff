@@ -248,13 +248,41 @@
     // the weapons will be added when any other weapons are in the list
     // can also be a category
     "CanBeUsedAs": {
-        "5447a9cd4bdc2dbd208b4567": ["M4A1"],
-        "5839a40f24597726f856b511": ["939c742f7dad852286188029"]
+        "5447a9cd4bdc2dbd208b4567": ["M4A1"]
     },
-    // if any two weapons' short names are the same or differs only by these words, they will be considered the same, better NOT to use
+    // if any two weapons' short names are the same or differs only by these words, they will be considered the same
     "CanBeUsedAsShortNameWhitelist": [],
-    // any weapon with these short names will be skipped from the previous list, better NOT to use
-    "CanBeUsedAsShortNameBlacklist" : [],
+    // any weapon with these short names will be skipped from the previous list
+    "CanBeUsedAsShortNameBlacklist" : [
+        "MCW",
+        "ISO",
+        "Hemlock",
+        "700",
+        "M700",
+        "SR-25",
+        "Expedite",
+        "Mk47",
+        "AK",
+        ".300 Blackout",
+        ".300",
+        "Blackout",
+        "FDE",
+        "OD",
+        "furry",    
+        "black",
+        "OD",
+        "BK",
+        "GRY",
+        ".277",
+        "red",
+        "gold",
+        "multi",
+        "caliber",
+        "MCX",
+        "AKS-74UN",
+        "AKS-74UB",
+        "AKS-74U"
+    ],
     // for quests that need specific types of weapons
     "CustomCategories": [
         {
@@ -279,6 +307,16 @@
             "blackListedKeywords": [], //  weapons with name/description containing these will be removed
             "allowedCalibres": [], //  weapons with only these will be added,
             "alsoCheckDescription": false //  if true, the description will also be checked
+        },
+        {
+            "name": "AKS-74UB",
+            "ids": [], 
+            "whiteListedKeywords": [
+                "\\b(AKS-74UB)\\w*"
+            ], 
+            "blackListedKeywords": [], 
+            "allowedCalibres": [], // 
+            "alsoCheckDescription": false 
         },
         {
             "name": "12ga", // Identifier
@@ -467,7 +505,9 @@
             "name": "cal_338",
             "ids": [],
             "whiteListedKeywords": [],
-            "blackListedKeywords": [],
+            "blackListedKeywords": [
+                "\\b(.300|Winchester)\\w*"
+            ],
             "allowedCalibres": [
                 "Caliber86x70",
                 "Caliber86x63"
