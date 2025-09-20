@@ -48,6 +48,12 @@
             "skip": false
         },
         {
+            "id": "66058cb9e8e4f17985230805", // Balancing - Part 2
+            "whiteListedWeapons": ["AKS-74UB"],
+            "onlyUseWhiteListedWeapons": true,
+            "skip": false
+        },
+        {
             "id": "64e7b9bffd30422ed03dad38", // Gendarmerie - District Patrol
             "whiteListedWeapons": ["AssaultRifle","AssaultCarbine"],
             "onlyUseWhiteListedWeapons": true,
