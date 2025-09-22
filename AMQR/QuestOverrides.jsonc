@@ -48,6 +48,12 @@
             "skip": false
         },
         {
+            "id": "666314b4d7f171c4c20226c3", // The Good Times - Part 1
+            "whiteListedWeapons": ["M4A1"],
+            "onlyUseWhiteListedWeapons": true,
+            "skip": false
+        },
+        {
             "id": "66058cb9e8e4f17985230805", // Balancing - Part 2
             "whiteListedWeapons": ["AKS-74UB"],
             "onlyUseWhiteListedWeapons": true,
